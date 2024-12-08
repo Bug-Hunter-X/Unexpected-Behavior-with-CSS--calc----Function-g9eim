@@ -1,0 +1,27 @@
+/* bugSolution.css */
+/* Solution for inconsistent units: Ensure consistent unit usage */
+.container {
+  width: calc(100vw - 100px);
+}
+
+/* Solution for complex calculations: Break down into simpler calculations*/
+.element {
+  width: 50%;
+  margin-left: calc( (100vw - 50%) /2);
+}
+
+/* Solution for browser compatibility:  Use vendor prefixes if necessary (though less critical now) */
+.element {
+  width: -webkit-calc(100px + 1em);
+  width: calc(100px + 1em);
+}
+
+/* Using alternative layout techniques for better management*/
+.flex-container{
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex-item{
+  width: 100px;
+} 
